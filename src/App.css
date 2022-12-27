@@ -1,41 +1,43 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  font-family: "Karla", sans-serif;
+  background-color: #F5F7FB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 98vh;
+  background-image: url("./assets/blob-top.svg"), url("./assets/blob-bottom.svg");
+  background-position: right top, bottom left;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.front--page {
   text-align: center;
+  color: #293264;
+  max-width: 45%;
+  margin: 0 auto 3.75em auto;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.title {
+  font-size: 2.25rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.desc {
+  line-height: 1.25em;
+  font-weight: 500;
+  font-size: 1.25rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.start--quiz {
+  background-color: #4D5B9E;
+  border: none;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 1.25rem;
+  padding: 0.8em 2.25em;
+  cursor: pointer;
+  border-radius: 0.75em;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.start--quiz:active {
+  color: #DEEBF8;
 }
